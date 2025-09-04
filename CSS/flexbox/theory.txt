@@ -1,0 +1,205 @@
+CSS FLEXBOX
+============
+
+INTRODUCTION TO FLEXBOX
+-------------------------
+Flexbox (Flexible Box Layout) is a CSS layout model that makes it easier to design flexible and responsive layout structures without using float or positioning.
+It is designed for one-dimensional layout — laying out items in a row or a column.
+
+Flexbox allows us to:
+-------------------------
+Align items
+Distribute space within a container
+Control the direction, order, size, and alignment of child elements
+
+To enable Flexbox:
+---------------------
+Use display: flex on the container element.
+
+Example:
+.container {
+display: flex;
+}
+
+FLEX CONTINER PROPERTIES
+--------------------------
+display
+Enables flex layout.
+Values: flex or inline-flex
+
+flex-direction
+-----------------
+Defines the direction of flex items in the container.
+
+Values:
+
+row (default) → horizontal left to right
+row-reverse → horizontal right to left
+column → vertical top to bottom
+column-reverse → vertical bottom to top
+
+flex-wrap
+--------------
+Controls whether flex items should wrap to the next line or not.
+
+Values:
+
+nowrap (default)
+wrap
+wrap-reverse
+flex-flow
+Shorthand for flex-direction + flex-wrap
+
+Example: flex-flow: row wrap;
+
+justify-content
+------------------
+Aligns items horizontally (main axis)
+
+Values:
+
+flex-start (default) → items aligned to left
+flex-end → items aligned to right
+center → items centered
+space-between → equal space between items
+space-around → equal space around items
+space-evenly → equal space between and around items
+
+align-items
+--------------
+Aligns items vertically (cross axis)
+
+Values:
+
+stretch (default)
+flex-start
+flex-end
+center
+baseline
+align-content
+Aligns multiple rows in the container
+Works only if flex-wrap is used and items wrap into multiple lines
+
+FLEX ITEM PROPERTIES
+-------------------------
+order
+
+Defines the order of items.
+
+Lower value = appears first.
+
+Default: 0
+
+Example:
+.box3 {
+order: -2000;
+}
+
+.box4 {
+order: 1000;
+}
+
+flex-grow
+------------
+Defines how much an item grows relative to the rest.
+
+Default: 0 (does not grow)
+
+If all items have flex-grow: 1, they grow equally.
+
+Example:
+.box2 {
+flex-grow: 1;
+}
+
+flex-shrink
+------------
+Defines how items shrink when space is tight.
+
+Default: 1
+
+0 = do not shrink
+
+Example:
+.box4 {
+flex-shrink: 2;
+}
+
+flex-basis
+-------------
+Defines the initial size of the item before growing or shrinking.
+
+Can use width, %, px, etc.
+
+flex
+------
+Shorthand for flex-grow, flex-shrink, and flex-basis
+
+Example: flex: 1 0 100px;
+
+align-self
+Allows individual alignment on cross-axis.
+Overrides align-items.
+
+PRACTICAL EXAMPLE
+----------------------
+
+.profileContainer {
+display: flex; → enables flexbox
+flex-wrap: wrap; → allows wrapping to new lines
+justify-content: space-evenly; → equal spacing around items
+}
+
+Each .profileCard:
+
+Uses flex-grow: 1 to grow if space allows
+
+Has fixed width (250px), padding, margin, and other styles
+
+Result: responsive grid of cards
+
+OTHER USEFUL PROPERTIES
+==========================
+
+gap:
+-----
+Adds spacing between items (row and column gap)
+
+Example: gap: 10px;
+
+object-fit (used inside profileCard img):
+---------------------------------------------
+
+Controls how image fits inside its container
+
+Value: cover, contain, etc.
+WHEN TO USE FLEXBOX
+
+One-dimensional layout (row OR column)
+Equal-width items
+Easy centering
+Dynamic item reordering
+Responsive card grids
+
+Use CSS Grid for two-dimensional layouts (rows AND columns).
+--------------------------------------------------------------
+FLEX CONTAINER:
+------------------
+display
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+FLEX ITEMS:
+-------------
+order
+
+flex-grow
+flex-shrink
+flex-basis
+flex (shorthand)
+align-self

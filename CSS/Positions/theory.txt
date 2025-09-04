@@ -1,0 +1,84 @@
+CSS POSITIONING
+=================
+CSS Positioning is used to control how elements are placed on a web page.
+
+There are 5 types of CSS position values:
+
+static
+relative
+absolute
+fixed
+sticky
+
+POSITION: STATIC
+-------------------
+This is the default value.
+
+Elements are positioned according to the normal flow of the document.
+
+top, left, right, bottom do not have any effect.
+
+Example behavior:
+A <div> with position: static and top: 100px will ignore the top value.
+
+POSITION: RELATIVE
+--------------------
+Element is positioned relative to its normal position.
+
+It remains in the document flow, but can be moved using top, left, right, or bottom.
+
+Other elements still behave as if the element is in its original position.
+
+Example behavior:
+If you set top: 50px, the element moves down by 50px, but the space it originally occupied remains.
+
+POSITION: ABSOLUTE
+--------------------
+The element is removed from the normal document flow.
+
+It is positioned relative to its closest positioned ancestor (with position: relative, absolute, or fixed).
+
+If no such ancestor is found, it is positioned relative to the <html> or viewport.
+
+You can use top, right, bottom, left to position it.
+
+Important:
+To make an absolutely positioned element align relative to a section or container, that container must have position: relative.
+
+POSITION: FIXED
+------------------
+The element is removed from the normal document flow.
+
+It is positioned relative to the browser window (viewport).
+
+It stays fixed at that position even when the user scrolls.
+
+Common use: sticky headers, floating chat buttons, etc.
+
+Example behavior:
+A fixed nav bar at the top of the page remains visible when scrolling.
+
+POSITION: STICKY
+------------------
+The element toggles between relative and fixed, depending on the user's scroll position.
+
+It behaves like relative until it reaches a defined scroll position, then sticks like fixed.
+
+You must specify top, left, etc., for it to work.
+
+Works best within scrollable containers.
+
+Example behavior:
+A sticky heading will scroll normally until it reaches the top of the screen, where it will stick.
+
+Note:
+position: sticky does not work if the parent element has overflow: hidden.
+
+USE CASES:
+-------------
+
+static: Default behavior. Use when no positioning is needed.
+relative: Slightly move element while maintaining flow.
+absolute: Overlay elements, tooltips, dropdowns, etc.
+fixed: Headers, footers, floating buttons.
+sticky: Smart sticky headers, labels in scrollable content.

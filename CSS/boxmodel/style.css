@@ -1,0 +1,65 @@
+/* 
+
+    Box Model : 
+
+    1. Content (height & width)
+    2. Padding - space between content and border
+    3. Border - border of the element
+    4. Margin - space between element and other elements
+
+*/
+.profileContainer{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.profileCard{
+    flex-grow: 1;
+    margin: 10px;
+    width: 250px;
+    background-color: rgb(241, 238, 238);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profileCard:hover{
+    background-color: rgb(245, 242, 242);
+    box-shadow: rgba(0, 0, 0, 0.35);
+    transform: scale(1.03);
+}
+
+.profileCard img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.profileCard h2{
+    font-size: 24px;
+    font-weight: bold;
+    /* margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px; */
+    margin: 5px 0px;
+}
+
+.profileCard p{
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.profileCard button{
+    padding: 5px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+}

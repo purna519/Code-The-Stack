@@ -1,0 +1,54 @@
+/* 
+
+    CSS Positions : 
+
+    1. static
+    2. relative
+    3. absolute
+    4. fixed
+    5. sticky
+
+*/
+
+div{
+    height: 120px;
+    width: 120px;
+    background-color: black;
+    /* margin: 5px; */
+}
+
+.static{
+    background-color: aqua;
+    position: static;
+    top: 120px;
+    left: 120px;
+}
+.relative{
+    background-color: blue;
+    /* position: relative; */
+    top: 120px;
+    right: 120px;
+}
+
+section{
+    background-color: gray;
+    height: 400px;
+    /* position: relative; */
+}
+.absolute{
+    background-color: red;
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+}
+.fixed{
+    background-color: green;
+    position: fixed;
+}
+.sticky{
+    background-color: yellow;
+    position: sticky;
+    top: 200px;
+    left: 0px;
+
+}
