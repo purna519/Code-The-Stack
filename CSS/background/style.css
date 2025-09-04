@@ -1,0 +1,21 @@
+/* CSS Background Props  */
+
+.container{
+    color: white;
+    height: 100px;
+    padding: 20px;
+    border: 20px dashed #000;
+    /* background-color: #ede6e6;
+    background-image: url("https://i.pinimg.com/736x/cf/35/91/cf3591df9bfec3802311fbf497c6ba84.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+   background-size: contain; 
+    background-attachment:scroll;
+    background-origin: content-box; */
+
+    background: linear-gradient(270deg, orange, white, green );
+}
+
+h1{
+    margin: 0px;
+}

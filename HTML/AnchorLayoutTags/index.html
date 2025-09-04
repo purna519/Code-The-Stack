@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anchor Tag Layout Example</title>
+    <style>
+        /* Container div for navigation */
+        .nav-bar {
+            background-color: #333;
+            padding: 10px;
+            display: flex; /* horizontal layout */
+        }
+
+        /* Styling links inside nav-bar */
+        .nav-bar a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        /* Link hover effect */
+        .nav-bar a:hover {
+            background-color: #575757;
+        }
+
+        /* Vertical link list */
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        .sidebar a {
+            display: block; /* stack vertically */
+            padding: 8px;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Anchor Tags Layout Using div Example</h1>
+
+    <!-- Horizontal navigation bar -->
+    <div class="nav-bar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <br/>
+
+    <!-- Vertical sidebar with links -->
+    <div class="sidebar">
+        <a href="#profile">Profile</a>
+        <a href="#settings">Settings</a>
+        <a href="#logout">Logout</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+Core Components of HTML
+
+1. Tags
+2. Attributes
+3. Elements
+4. Difference between Class and Id
+
+==================================================================================================================
+
+1. Tags
+
+- Tags are predefined keywords used to define the structure and content of a webpage.
+- Tags tell the browser how to display or format the content.
+- Most HTML tags come in pairs (opening and closing), but some are self-closing.
+
+Syntax:
+    <TagName>Content</TagName>
+
+Types of Tags:
+
+a. Paired Tags:
+- These have both opening and closing tags.
+Example:
+    <p>Hello World</p>
+
+b. Self-Closing or Single Tags:
+- These do not need a closing tag.
+Examples:
+    <br>   → Line break  
+    <img />   → Image  
+    <hr>   → Horizontal line
+
+==================================================================================================================
+
+2. Attributes
+
+- Attributes are used to provide additional information about HTML elements.
+- They are always written inside the opening tag.
+- They help in customizing the behavior or appearance of the element.
+
+Syntax:
+    <TagName attributeName="value">Content</TagName>
+
+Examples:
+    <a href="https://example.com">Visit Site</a>
+    <img src="image.jpg" alt="Image description" />
+
+Types of Attributes:
+
+a. Global Attributes:
+- Can be used with any HTML tag.
+- Examples:
+    class, id, style, title
+
+b. Specific Attributes:
+- Can be used only with specific tags.
+Examples:
+    - src → used with <img>, <video>, etc.
+    - href → used with <a>, <link>
+    - alt → used with <img>
+
+==================================================================================================================
+
+3. Elements
+
+- An element is the complete structure consisting of:
+  Opening Tag + Content + Closing Tag (or just a self-closing tag)
+
+Examples:
+    <p>This is a paragraph.</p>
+    <img src="logo.png" alt="Company Logo" />
+
+Types of Elements:
+
+a. Block-level Elements:
+- Always start on a new line and take up the full width available.
+- Used to structure major parts of the page.
+- Examples:
+    <div>, <p>, <h1> to <h6>, <section>, <article>, <header>, <footer>
+
+b. Inline Elements:
+- Do not start on a new line.
+- Only take up as much width as needed.
+- Used for smaller parts inside block elements.
+- Examples:
+    <span>, <a>, <strong>, <em>, <img>
+
+c. Inline-Block Elements:
+- Behave like inline elements but can have width and height set.
+- Examples:
+    <button>, <input>, <img> (in most use cases)
+
+==================================================================================================================
+
+4. Difference between Class and Id
+
+id:
+- Used to uniquely identify a single element on the page.
+- Each id should be unique.
+- Common use: Targeting one element via JavaScript or CSS.
+Example:
+    <div id="header">Main Header</div>
+
+class:
+- Used to apply the same style or behavior to multiple elements.
+- Can be reused multiple times across elements.
+Example:
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+
+In CSS:
+    #header {
+        background-color: blue;
+    }
+
+    .card {
+        border: 1px solid gray;
+    }
+
+==================================================================================================================
+

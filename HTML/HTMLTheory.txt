@@ -1,0 +1,296 @@
+HTML NOTES - COMPLETE REFERENCE
+===============================
+
+1. INTRODUCTION TO HTML
+-----------------------------
+- **HTML** stands for **HyperText Markup Language**.
+- It is the **standard language for creating webpages** and web applications.
+- HTML describes the **structure of a webpage** using elements (tags).
+
+Example:
+----------
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Webpage</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+HTML DOCUMENT STRUCTURE
+
+Every HTML document follows a basic structure:
+------------------------------------------------
+=> <!DOCTYPE html>: Declares the document type and version (HTML5).
+=> <html>: Root element that wraps all HTML content.
+=> <head>: Contains meta-information (title, styles, links).
+=> <body>: Visible part of the document (content shown to users).
+
+Example:
+---------
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Page</title>
+  </head>
+  <body>
+    <p>This is content.</p>
+  </body>
+</html>
+
+HTML ELEMENTS
+-----------------
+An HTML element is made of:
+
+=> Start Tag: e.g., <p>
+=> Content: e.g., This is a paragraph.
+=> End Tag: e.g., </p>
+
+Syntax:
+----------
+<tagname>Content goes here</tagname>
+Some tags are self-closing:
+
+<img src="image.jpg" alt="An image" />
+<br />
+<hr />
+<input type="text" />
+
+HTML HEADINGS
+---------------
+Defined with <h1> to <h6> tags.
+
+<h1> is the largest, <h6> is the smallest.
+
+Example:
+------------
+<h1>Main Heading</h1>
+<h2>Sub Heading</h2>
+
+HTML PARAGRAPHS & TEXT FORMATTING
+------------------------------------
+<p>: Defines a paragraph.
+<br>: Line break.
+<hr>: Horizontal line.
+
+Text Formatting Tags:
+------------------------
+<b>: Bold
+<i>: Italic
+<u>: Underline
+<strong>: Strong importance
+<em>: Emphasis
+<mark>: Highlighted text
+<small>: Smaller text
+<del>: Deleted text
+<ins>: Inserted text
+<sub>: Subscript
+<sup>: Superscript
+
+Example:
+----------
+<p>This is <b>bold</b> and <i>italic</i> text.</p>
+
+HTML LINKS
+------------
+Use <a> tag to create hyperlinks.
+
+Attributes:
+-------------
+=> href: URL
+=> target: Specifies where to open link (_blank, _self)
+
+Example:
+----------
+<a href="https://example.com" target="_blank">Visit Example</a>
+
+HTML IMAGES
+--------------
+Use <img> tag.
+
+Attributes:
+--------------
+src: Image source
+alt: Alternate text
+width, height: Dimensions
+
+Example:
+----------
+<img src="photo.jpg" alt="A photo" width="300" height="200" />
+
+HTML LISTS
+-------------
+1. Ordered List <ol>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+</ol>
+
+2. Unordered List <ul>
+
+<ul>
+  <li>Item A</li>
+  <li>Item B</li>
+</ul>
+
+3. Description List <dl>
+
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+</dl>
+
+HTML TABLES
+--------------
+Structure:
+
+<table>: Table
+<tr>: Table row
+<th>: Table header
+<td>: Table data
+
+Example:
+----------
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>24</td>
+  </tr>
+</table>
+
+HTML FORMS
+------------
+Used for user input.
+Key Tags:
+-----------
+=> <form>: Defines a form
+=> <input>: User input
+=> <label>: Label for input
+=> <textarea>: Multi-line text
+=> <button>: Button
+=> <select>, <option>: Dropdown
+
+Example:
+------------
+<form action="/submit" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" />
+  <br />
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea>
+  <br />
+  <button type="submit">Send</button>
+</form>
+
+HTML INPUT TYPES
+------------------
+text, password, email, number, radio, checkbox, submit, reset, file, date, etc.
+
+Example:
+----------
+<input type="email" />
+<input type="checkbox" />
+
+HTML ATTRIBUTES
+-----------------
+All elements can have attributes.
+Written inside start tag: name="value"
+Common attributes:
+----------------------
+id, class, style, title, src, href, alt, type, etc.
+
+HTML ID AND CLASS
+------------------
+=> id: Unique identifier
+=> class: Reusable style group
+
+Example:
+---------------
+<p id="intro">Hello</p>
+<p class="highlight">Hi</p>
+
+HTML SEMANTIC ELEMENTS
+------------------------
+Gives meaning to structure:
+
+<header>, <footer>, <nav>, <main>, <section>, <article>, <aside>, <figure>, <figcaption>
+
+Example:
+-----------
+<article>
+  <h2>News Title</h2>
+  <p>News content...</p>
+</article>
+
+HTML INLINE VS BLOCK ELEMENTS
+--------------------------------
+Block-level: <div>, <p>, <h1>, <section> — starts on a new line.
+Inline: <span>, <a>, <b>, <img> — does not break line.
+
+HTML IFRAME
+--------------
+Used to embed another page.
+Example:
+-----------
+<iframe src="https://example.com" width="600" height="400"></iframe>
+HTML AUDIO & VIDEO
+
+Audio:
+----------
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg" />
+</audio>
+
+Video:
+-----------
+<video width="400" controls>
+  <source src="movie.mp4" type="video/mp4" />
+</video>
+
+HTML META TAGS
+----------------
+Inside <head> — for SEO and browser behavior.
+
+Example:
+-----------
+<meta charset="UTF-8" />
+<meta name="description" content="Free Web tutorials" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+HTML ENTITIES
+
+Used for reserved characters.
+--------------------------------
+Example:
+-----------
+&lt; = <
+&gt; = >
+&amp; = &
+&nbsp; = non-breaking space
+HTML COMMENTS
+Not displayed in browser.
+
+Syntax:
+---------
+<!-- This is a comment -->
+
+HTML SYMBOLS & EMOJIS
+------------------------
+&#169; = ©
+&#9733; = ★
+&#x1F600; = 😀
+HTML DEPRECATED TAGS (AVOID USING)
+
+Examples:
+------------
+=> <font>
+=> <center>
+=> <big>, <strike>
+=> Use CSS instead.
+

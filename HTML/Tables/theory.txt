@@ -1,0 +1,26 @@
+Tables in HTML:
+
+Purpose of Tables:
+
+Tables are used to display data in a structured format using rows and columns.
+Useful for organizing related information clearly, such as schedules, lists, or comparisons.
+
+Basic Table Tags:
+<table> : Defines the table container.
+<tr> : Defines a table row.
+<th> : Defines a table header cell, usually bold and centered.
+<td> : Defines a table data cell, contains normal content.
+
+Structure of a Table:
+A table consists of multiple rows (<tr>) and each row contains header cells (<th>) or data cells (<td>).
+The first row often contains header cells to describe the content of each column.
+
+Important Attributes and Concepts:
+
+border (attribute or CSS) : Adds borders to table and cells.
+colspan and rowspan : Merge cells across columns or rows (used for complex tables).
+Tables should be styled with CSS for better appearance.
+
+Styling Tables:
+Use CSS properties like border-collapse, padding, background-color to improve table readability.
+Alternate row colors can improve visual clarity.

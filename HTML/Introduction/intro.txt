@@ -1,0 +1,223 @@
+HTML - Complete Notes
+
+1. What is HTML?
+
+- HTML stands for HyperText Markup Language.
+- It is the standard markup language used to create and structure web pages.
+- HTML consists of elements (called tags) that tell the browser how to display content.
+
+Note:
+- HyperText means text with links to other web pages.
+- Markup Language means a way of writing content using tags to format and structure it.
+
+==================================================================================================================
+
+2. History of HTML
+
+- HTML was proposed by Tim Berners-Lee in 1989.
+- It was first implemented in 1991 with a small set of tags.
+
+HTML Versions:
+
+- HTML 1.0 (1993): Basic page structure - headings, paragraphs, links.
+- HTML 2.0 (1995): Added forms and tables.
+- HTML 3.0 (1997): Introduced support for applets and text flow.
+- HTML 4.0 (1999): Added scripting support and accessibility.
+- HTML5 (2014): Modern version with multimedia, semantic elements, and APIs.
+
+==================================================================================================================
+
+3. Basic HTML Structure
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+  <!-- Page Content Here -->
+</body>
+</html>
+
+Explanation:
+- <!DOCTYPE html>: Declares that the document is using HTML5.
+- <html>: Root element that contains the entire HTML content.
+- <head>: Contains meta information, links to CSS, page title, etc.
+- <title>: The text that appears in the browser tab.
+- <body>: The part of the page that is visible to users (text, images, etc.).
+
+==================================================================================================================
+
+4. Meta Tags in the <head> Section
+
+Meta tags give the browser and search engines extra information about the page.
+
+<meta charset="UTF-8">
+- Specifies character encoding. UTF-8 covers most characters from all languages.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+- Makes the page responsive on different screen sizes (like mobile).
+
+<meta name="description" content="Page description">
+- Describes the content of the page for search engines.
+
+<meta name="keywords" content="HTML, CSS, JavaScript">
+- Keywords for SEO (less commonly used now).
+
+<meta name="author" content="Your Name">
+- Defines the author of the webpage.
+
+==================================================================================================================
+
+5. Web Page vs Website vs Web Application
+
+- Web Page: A single HTML file (e.g., index.html).
+- Website: A collection of related web pages (e.g., wikipedia.org).
+- Web Application: A dynamic website with interactive functionality (e.g., Gmail, Facebook).
+
+==================================================================================================================
+
+6. HTML File Naming Conventions
+
+Avoid these:
+- Don't start file names with numbers (wrong: 1page.html)
+- Don't use spaces (wrong: my page.html)
+- Don't use special characters (wrong: my@page.html)
+- Don't use reserved keywords like class.html or default.html
+
+Best practices:
+- Use lowercase (example: homepage.html)
+- Use hyphens instead of spaces (example: about-us.html)
+- Use underscores (example: contact_us.html)
+- Use camelCase (example: myPortfolio.html)
+- Use clear and descriptive names (example: product-details.html)
+
+==================================================================================================================
+
+7. HTML5 Features
+
+1. Semantic Elements
+
+Semantic tags describe the meaning of the content they hold. They improve readability and accessibility.
+
+Examples:
+- <header>: Page header
+- <footer>: Page footer
+- <section>: Section of related content
+- <article>: Independent content like a blog post
+- <aside>: Sidebar content
+- <nav>: Navigation links
+
+Example:
+<article>
+  <h2>HTML5 Introduction</h2>
+  <p>This is a self-contained blog post.</p>
+</article>
+
+==================================================================================================================
+
+2. Canvas and SVG
+
+Used to create graphics and drawings directly in the browser.
+
+- <canvas>: Draw shapes using JavaScript.
+- <svg>: Scalable vector graphics (XML-based).
+
+Example using canvas:
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.fillStyle = "blue";
+  ctx.fillRect(10, 10, 150, 75);
+</script>
+
+==================================================================================================================
+
+3. Video and Audio
+
+Used to embed media without external plugins like Flash.
+
+Example:
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+</video>
+
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+==================================================================================================================
+
+4. Web Storage
+
+Allows data to be stored in the browser.
+
+Two types:
+- sessionStorage: Data is cleared when the tab is closed.
+- localStorage: Data stays until manually cleared.
+
+Example:
+localStorage.setItem("username", "john");
+sessionStorage.setItem("cart", "3 items");
+
+==================================================================================================================
+
+5. Geolocation
+
+Used to get the user's current geographic location (with permission).
+
+Example:
+navigator.geolocation.getCurrentPosition(function(position) {
+  console.log("Latitude: " + position.coords.latitude);
+});
+
+==================================================================================================================
+
+6. Web Workers
+
+Allow JavaScript code to run in the background without blocking the user interface.
+
+Useful for:
+- Real-time calculations
+- Large data processing
+- Background syncing
+
+==================================================================================================================
+
+7. Web Sockets
+
+Provide real-time, two-way communication between browser and server.
+
+Used in:
+- Chat apps
+- Online games
+- Live data dashboards
+
+==================================================================================================================
+
+8. Offline Web Apps
+
+Web apps that continue to work without an internet connection.
+
+Use:
+- App cache
+- Service workers
+- IndexedDB for storage
+
+==================================================================================================================
+
+9. Form Enhancements
+
+HTML5 added new input types and features to improve forms.
+
+Examples:
+- <input type="email">
+- <input type="date">
+- <input placeholder="Your name">
+- <input required>
+- <input pattern="[A-Za-z]{3}">
+
+These help with validation and make forms more user-friendly.
+
+==================================================================================================================

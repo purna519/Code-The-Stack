@@ -1,0 +1,206 @@
+CSS INTRO NOTES 
+==================
+
+1. INTRODUCTION TO CSS
+-----------------------
+CSS stands for "Cascading Style Sheets". It is a style sheet language used to describe the presentation (look and formatting) of a document written in HTML or XML.
+
+CSS defines how HTML elements should be displayed in terms of:
+- Layout
+- Colors
+- Fonts
+- Margins and spacing
+- Alignment
+- Animations and transitions
+- Responsiveness
+
+CSS allows web developers to separate content (HTML) from design (CSS).
+
+-------------------------------
+2. HISTORY OF CSS
+-------------------------------
+
+- Inventor: Håkon Wium Lie
+- First proposed: October 10, 1994
+- First published: 1996 by the World Wide Web Consortium (W3C)
+- Co-developed with: Bert Bos
+
+The idea was to separate style from content, which HTML alone couldn't handle efficiently.
+
+Håkon Wium Lie was working with Tim Berners-Lee (inventor of the Web) at CERN when he proposed CSS.
+
+-------------------------------
+3. CSS VERSIONS
+-------------------------------
+
+CSS1 - Released in 1996  
+- Basic styling (fonts, colors, alignment, etc.)
+- Supported by Internet Explorer 3 and Netscape 4
+
+CSS2 - Released in 1998  
+- Added positioning, z-index, media types, and support for aural style sheets.
+
+CSS2.1 - Maintenance release (2004–2011)  
+- Bug fixes, removed unsupported features
+
+CSS3 - Released in 2012 (Modular)  
+- Split into modules (selectors, backgrounds, animations, etc.)
+- Added features like transitions, animations, media queries, flexbox
+
+CSS4 - No official single specification  
+- Instead, CSS is evolving through separate module levels (e.g., Selectors Level 4, Media Queries Level 4)
+
+-------------------------------
+4. WHY USE CSS?
+-------------------------------
+
+- Separates content from presentation
+- Reusable styles across pages
+- Faster page loading
+- Easier maintenance
+- Better control over layout
+- Responsive design for different screen sizes
+
+-------------------------------
+5. TYPES OF CSS
+-------------------------------
+
+1. Inline CSS  
+   - Written inside the HTML tag using `style` attribute  
+   - Applies only to that specific element  
+   - Highest priority
+
+2. Internal CSS  
+   - Written within `<style>` tags in the `<head>` section  
+   - Applies to the entire document  
+   - Medium priority
+
+3. External CSS  
+   - Written in a separate `.css` file  
+   - Linked using `<link>` tag  
+   - Applies to multiple HTML pages  
+   - Lowest priority unless overridden
+
+-------------------------------
+6. CSS SYNTAX
+-------------------------------
+
+Basic structure:
+selector {
+  property: value;
+}
+
+Example:
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+-------------------------------
+7. SELECTORS IN CSS
+-------------------------------
+
+- Universal Selector: * { }  
+- Element Selector: h1, p, div  
+- Class Selector: .classname  
+- ID Selector: #idname  
+- Group Selector: h1, h2, p { }  
+- Descendant Selector: div p  
+- Child Selector: div > p  
+- Attribute Selector: input[type="text"]  
+- Pseudo-classes: a:hover, p:first-child  
+- Pseudo-elements: p::before, p::after  
+
+-------------------------------
+8. IMPLEMENTING CSS
+-------------------------------
+
+A. Inline CSS
+
+<h1 style="color: red;">Hello</h1>
+
+B. Internal CSS
+
+<head>
+  <style>
+    h1 {
+      color: green;
+    }
+  </style>
+</head>
+
+C. External CSS
+
+HTML:
+<link rel="stylesheet" href="styles.css">
+
+styles.css:
+h1 {
+  color: blue;
+}
+
+-------------------------------
+9. CASCADE & PRIORITY ORDER
+-------------------------------
+
+1. Inline CSS (highest)
+2. Internal CSS
+3. External CSS
+4. Browser default styles
+
+In case of conflict:
+- The most specific rule wins
+- The rule defined last wins if specificity is same
+- `!important` can override everything
+
+Example:
+p {
+  color: blue !important;
+}
+
+-------------------------------
+10. CSS FEATURES
+-------------------------------
+
+- Modular structure (CSS3)
+- Custom properties (variables)
+- Media Queries
+- Keyframe animations
+- Transitions
+- Pseudo-classes and pseudo-elements
+- Flexbox and Grid layout
+- Background and border styling
+- Responsive typography
+
+-------------------------------
+11. LIMITATIONS OF CSS
+-------------------------------
+
+- No logic or conditionals (limited dynamic behavior)
+- Cannot create complex functions (use JavaScript)
+- Limited math operations
+- Inconsistent browser support (for some features)
+- Specificity conflicts can make debugging difficult
+
+-------------------------------
+12. BEST PRACTICES
+-------------------------------
+
+- Use external CSS for modularity and reuse
+- Use semantic class names
+- Avoid inline styles (except for dynamic styling)
+- Use shorthand properties (e.g., margin: 10px 5px;)
+- Organize CSS into sections
+- Reset or normalize styles across browsers
+- Test in multiple devices and browsers
+- Use CSS variables to manage repeated values
+
+-------------------------------
+13. TOOLS AND EXTENSIONS
+-------------------------------
+
+- CSS Preprocessors: SASS, LESS
+- Autoprefixer: Adds vendor prefixes automatically
+- Developer Tools in Chrome/Firefox for debugging
+- Frameworks: Bootstrap, Tailwind CSS, Materialize
+- Linting: Stylelint for CSS code quality

@@ -1,0 +1,157 @@
+HTML Text Tags and Lists – Notes
+
+1. HTML Boilerplate
+
+- <!DOCTYPE html>: Declares the document type as HTML5.
+- <html lang="en">: The root tag of the HTML document, with the language set to English.
+- <head>: Contains meta information, title, links to stylesheets, etc.
+- <meta charset="UTF-8">: Sets the character encoding to UTF-8.
+- <meta name="viewport">: Makes the page responsive on mobile devices.
+- <title>: Specifies the name shown on the browser tab.
+- <link>: Used to include Font Awesome icons via CDN.
+- <style>: Internal CSS styles are written here.
+
+===================================================================================================================
+
+2. Web Page Definition
+
+- A web page is a collection of content such as text, images, audio, video, and animations displayed through the browser.
+
+===================================================================================================================
+
+3. Heading Tags
+
+- HTML provides six levels of headings from <h1> to <h6>.
+- <h1> is the largest heading, and <h6> is the smallest.
+
+Example:
+    <h1>Heading1</h1>
+    <h2>Heading2</h2>
+    ...
+    <h6>Heading6</h6>
+
+===================================================================================================================
+
+4. Paragraph Tag (<p>)
+
+- Used to define paragraphs of text.
+- Content inside <p> is rendered with spacing before and after.
+
+Example:
+    <p>This is a paragraph of text.</p>
+
+Note:
+- A <div> was used with a <p> and <h3> tag to structure a styled paragraph using inline CSS.
+
+===================================================================================================================
+
+5. Preformatted Text (<pre>)
+
+- The <pre> tag is used to display preformatted text (preserves spaces, line breaks, and formatting).
+- Commonly used for poems, code blocks, or formatted text.
+
+Example:
+    <pre>
+        Twinkle, twinkle, little star,
+        How I wonder what you are!
+        ...
+    </pre>
+
+===================================================================================================================
+
+6. Span Tag (<span>)
+
+- <span> is an inline element used to style or group small pieces of content.
+- It does not start on a new line.
+
+Example:
+    <span>Secure delivery in 2 Days, Friday</span>
+
+===================================================================================================================
+
+7. List Tags
+
+a. Unordered List (<ul>)
+
+- Represents a list of items in no particular order.
+- The "type" attribute defines bullet style (circle, disc, square, none).
+- Nested lists are supported.
+
+Example:
+    <ul type="none">
+        <li>MI</li>
+        <ul>
+            <li>Rohit</li>
+            <li>Bumrah</li>
+        </ul>
+    </ul>
+
+Notes:
+- Font Awesome icons were used with <i> tags inside <li>.
+- Class and id were used for styling icons (example: .odd, #tag1).
+
+b. Ordered List (<ol>)
+
+- Displays a list with a specific order (numbers, letters, roman numerals).
+- The "type" attribute can be used to change the numbering style.
+- "type='none'" disables default numbering.
+
+Example:
+    <ol type="none">
+        <li>Bank Offer 1</li>
+        <li>Bank Offer 2</li>
+    </ol>
+
+c. Definition List (<dl>, <dt>, <dd>)
+
+- <dl>: Starts a definition list.
+- <dt>: Defines the term.
+- <dd>: Provides the definition of the term.
+
+Example:
+    <dl>
+        <dt>Inertia</dt>
+        <dd>Description of inertia goes here.</dd>
+    </dl>
+
+===================================================================================================================
+
+8. CSS in the File
+
+a. Classes (.)
+
+- .odd: Changes text color to yellow.
+- .fa-tag and .fa-calendar: Set the icon color to green.
+
+b. IDs (#)
+
+- #tag1: Applies red color to a specific icon.
+
+c. Inline Styles
+
+- Inline styles were used on elements like <div>, <h3>, and <p> to directly apply color or background.
+
+===================================================================================================================
+
+9. Font Awesome Icons
+
+- The file includes a link to the Font Awesome CDN for using icons.
+- Icons are added using <i class="fa-solid fa-tag"> or similar.
+
+Example:
+    <li><i class="fa-solid fa-tag"></i>MI</li>
+
+===================================================================================================================
+
+Summary of Tags Used:
+
+- <h1> to <h6>: Headings
+- <p>: Paragraph
+- <div>: Division block for layout and styling
+- <pre>: Preformatted text
+- <span>: Inline text container
+- <ul>, <ol>, <li>: Unordered and ordered lists
+- <dl>, <dt>, <dd>: Definition lists
+- <i>: For adding icons using Font Awesome
+
+===================================================================================================================

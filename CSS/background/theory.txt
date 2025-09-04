@@ -1,0 +1,239 @@
+CSS BACKGROUND PROPERTIES 
+=============================
+
+INTRODUCTION
+------------
+CSS background properties are used to style the background of HTML elements with:
+- Color
+- Images
+- Positioning
+- Repeating
+- Attachment
+- Sizing
+- Layering
+
+All background-related properties can be set individually or together using the shorthand `background` property.
+
+==============================================
+1. background-color
+==============================================
+Defines the background color of an element.
+
+Syntax:
+selector {
+  background-color: color;
+}
+
+Example:
+.container {
+  background-color: #ede6e6;
+}
+
+Values:
+- Color names (e.g., red, blue)
+- Hex codes (#ffffff)
+- RGB / RGBA
+- HSL / HSLA
+
+==============================================
+2. background-image
+==============================================
+Sets a background image for the element.
+
+Syntax:
+selector {
+  background-image: url("image_path");
+}
+
+Example:
+.container {
+  background-image: url("https://example.com/bg.jpg");
+}
+
+Notes:
+- Can use local or external URLs
+- You can layer multiple images separated by commas
+
+==============================================
+3. background-repeat
+==============================================
+Controls whether the background image repeats.
+
+Syntax:
+selector {
+  background-repeat: repeat | repeat-x | repeat-y | no-repeat;
+}
+
+Values:
+- `repeat`: default (both x and y)
+- `repeat-x`: only horizontally
+- `repeat-y`: only vertically
+- `no-repeat`: no repeating
+
+Example:
+.container {
+  background-repeat: no-repeat;
+}
+
+==============================================
+4. background-position
+==============================================
+Sets the initial position of the background image.
+
+Syntax:
+selector {
+  background-position: value;
+}
+
+Values:
+- `left`, `right`, `top`, `bottom`, `center`
+- `x% y%` (e.g., 50% 50%)
+- `xpx ypx` (e.g., 10px 20px)
+
+Example:
+.container {
+  background-position: top left;
+}
+
+==============================================
+5. background-size
+==============================================
+Defines the size of the background image.
+
+Syntax:
+selector {
+  background-size: value;
+}
+
+Values:
+- `auto` (default)
+- `cover`: covers the element entirely (may crop)
+- `contain`: fits within the element (no crop)
+- `100px 100px` (width height)
+
+Example:
+.container {
+  background-size: contain;
+}
+
+==============================================
+6. background-attachment
+==============================================
+Specifies whether the background image scrolls with the page or is fixed.
+
+Syntax:
+selector {
+  background-attachment: scroll | fixed | local;
+}
+
+Values:
+- `scroll`: background scrolls with content (default)
+- `fixed`: background stays fixed on the screen
+- `local`: background scrolls within the element
+
+Example:
+.container {
+  background-attachment: scroll;
+}
+
+==============================================
+7. background-origin
+==============================================
+Determines the positioning area for the background image.
+
+Syntax:
+selector {
+  background-origin: border-box | padding-box | content-box;
+}
+
+Values:
+- `border-box`: includes border
+- `padding-box`: excludes border
+- `content-box`: excludes padding and border
+
+Example:
+.container {
+  background-origin: content-box;
+}
+
+==============================================
+8. background-clip
+==============================================
+Defines how far the background extends within the element.
+
+Syntax:
+selector {
+  background-clip: border-box | padding-box | content-box;
+}
+
+(Note: Not used in your example, but good to know.)
+
+==============================================
+9. background (shorthand)
+==============================================
+Combines multiple background properties into one.
+
+Syntax:
+selector {
+  background: color image position / size repeat attachment origin;
+}
+
+Example:
+.container {
+  background: #ede6e6 url("img.jpg") no-repeat top left / contain scroll content-box;
+}
+
+You can also apply gradients:
+
+Example:
+.container {
+  background: linear-gradient(270deg, orange, white, green);
+}
+
+Types of gradients:
+- `linear-gradient()` — straight lines
+- `radial-gradient()` — circular patterns
+- `conic-gradient()` — cone-like gradients
+
+==============================================
+10. Example from your code
+==============================================
+
+.container {
+    color: white;
+    height: 100px;
+    padding: 20px;
+    border: 20px dashed #000;
+
+    /* Uncomment below to test individually:
+    background-color: #ede6e6;
+    background-image: url("https://i.pinimg.com/...jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    background-attachment: scroll;
+    background-origin: content-box;
+    */
+
+    background: linear-gradient(270deg, orange, white, green);
+}
+
+==============================================
+11. Notes and Best Practices
+==============================================
+- Use `background: ...` shorthand to reduce code clutter.
+- Prefer using compressed images for background to improve performance.
+- `background-attachment: fixed;` can create a parallax effect.
+- Test background readability when using text over images.
+- Use gradients for lightweight decorative backgrounds (no image load needed).
+
+==============================================
+12. Extra: Multiple Background Layers
+==============================================
+
+You can stack backgrounds (images, gradients) like this:
+
+Example:
+background: 
+  url("img1.jpg") no-repeat center center,
+  linear-gradient(to right, #f00, #00f);

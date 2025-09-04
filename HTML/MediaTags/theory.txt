@@ -1,0 +1,54 @@
+Media Tags
+
+1. Introduction to Media Tags
+
+-> Media tags are used in HTML to embed pictorial, audio, and video content on webpages.
+-> They enhance user experience by allowing multimedia integration.
+-> Common media tags include `<img>`, `<video>`, `<audio>`, and `<iframe>`.
+
+2. Image Tag (`<img>`)
+
+-> The `<img>` tag is used to display images.
+-> It is a self-closing tag (does not require a closing tag).
+-> Key attribute: `src` specifies the image source (URL or local path).
+-> Optional attributes: `alt` (alternative text), `width`, `height`.
+-> Example: `<img src="image_url.jpg" alt="Description"/>`
+
+3. Video Tag (`<video>`)
+
+-> The `<video>` tag embeds video content.
+-> It usually contains one or more `<source>` tags to specify video files.
+-> Supports controls like play, pause, volume through the `controls` attribute.
+-> Example:
+
+  ```
+  <video controls>
+      <source src="video.mp4" type="video/mp4">
+  </video>
+  ```
+-> Important: The `src` attribute inside `<source>` should point to the video file.
+-> Note: External video URLs like YouTube require different handling.
+
+4. Iframe Tag (`<iframe>`)
+
+-> The `<iframe>` tag embeds another webpage or media like videos from external sites.
+-> Commonly used to embed YouTube videos.
+-> Attributes include `src` for the video URL, `width`, `height`.
+-> Example:
+
+  ```
+  <iframe src="https://www.youtube.com/embed/video_id"></iframe>
+  ```
+-> It acts as a window to display external content inside your page.
+
+5. Audio Tag (`<audio>`)
+
+-> The `<audio>` tag is used to embed audio files.
+-> Similar to the video tag, it supports multiple `<source>` elements for different audio formats.
+-> The `controls` attribute enables play/pause buttons and volume control.
+-> Example:
+```
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+ ```

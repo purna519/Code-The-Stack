@@ -1,0 +1,80 @@
+.container{
+
+    width: 80%;
+    background-color: grey;
+    margin: 200px auto;
+    border-radius: 10px;
+}
+
+.container ul{
+    list-style: none;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container ul li{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pseudo Selectors */
+
+/* Classes */
+
+.container ul li:nth-last-child(5){
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+
+/* Anchor with Pseudo classes */
+
+h1 a{
+    text-decoration: none;
+}
+
+h1 a:link{
+    color: aqua;
+}
+
+h1 a:hover{
+    color: green;
+    text-decoration: dashed;
+}
+
+h1 a:active{
+    color: red;
+}
+
+
+h1 a:visited{
+    color: purple;
+}
+
+
+/* Elements */
+
+h1::first-letter{
+    font-size: 50px;
+}
+
+h1:hover::before{
+    content: "Hello!  ";
+}
+
+h1:hover:after{
+    content: "  Krishna";
+}
+
+p:hover::first-letter{
+    font-size: 30px;
+}

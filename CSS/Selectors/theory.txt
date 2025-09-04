@@ -1,0 +1,284 @@
+CSS SELECTORS
+===============
+
+INTRODUCTION
+------------
+CSS selectors are patterns used to select and style elements in an HTML document.
+
+They tell the browser which HTML elements the CSS rules should apply to.
+
+Syntax:
+selector {
+    property: value;
+    property2: value2;
+}
+
+---------------------------------
+TYPES OF SELECTORS
+---------------------------------
+
+1. BASIC SELECTORS
+===================
+
+A. UNIVERSAL SELECTOR
+----------------------
+Symbol: *
+Selects all elements on the page.
+
+Example:
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+B. TAG (TYPE) SELECTOR
+----------------------
+Selects all elements of a specific tag name.
+
+Example:
+p {
+    font-size: 14px;
+}
+
+div {
+    background-color: lightgray;
+}
+
+C. CLASS SELECTOR
+----------------------
+Symbol: .
+Selects all elements with a specific class.
+
+Example:
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.category-card {
+    background-color: #e2e8f0;
+}
+
+D. ID SELECTOR
+----------------------
+Symbol: #
+Selects a single element with a unique ID.
+
+Example:
+#main-header {
+    background-color: #1e293b;
+}
+
+#main-footer {
+    text-align: center;
+}
+
+E. ATTRIBUTE SELECTOR
+----------------------
+Selects elements based on the presence or value of an attribute.
+
+Examples:
+[data-type="fashion"] {
+    background-color: #fde68a;
+}
+
+[data-info="support"] {
+    color: #93c5fd;
+}
+
+header[id="main-header"] {
+    background-color: aqua;
+}
+
+F. GROUPING SELECTOR
+----------------------
+Selects multiple elements using the same style rule.
+
+Example:
+h2, h3 {
+    color: #1e40af;
+}
+
+---------------------------------
+2. COMBINATOR SELECTORS
+=================================
+
+These allow styling of elements based on relationships in the HTML structure.
+
+A. DESCENDANT SELECTOR (space)
+-------------------------------
+Selects all elements that are inside another element.
+
+Syntax:
+parent descendant
+
+Example:
+.navbar .nav-link {
+    transition: color 0.3s;
+}
+
+.header .navbar li {
+    background-color: red;
+}
+
+B. CHILD SELECTOR ( > )
+------------------------
+Selects direct children only.
+
+Syntax:
+parent > child
+
+Example:
+.nav-list > li {
+    padding: 5px;
+}
+
+header > .nav-list > li > a {
+    background-color: red;
+}
+
+C. ADJACENT SIBLING SELECTOR ( + )
+----------------------------------
+Selects the next sibling element that appears right after another.
+
+Syntax:
+element1 + element2
+
+Example:
+header + #categories > h2 {
+    background-color: blue;
+}
+
+D. GENERAL SIBLING SELECTOR ( ~ )
+----------------------------------
+Selects all siblings after the specified element.
+
+Syntax:
+element1 ~ element2
+
+Example:
+h2 ~ .note {
+    background-color: #fee2e2;
+    border-left: 5px solid red;
+}
+
+---------------------------------
+3. PSEUDO-CLASSES
+=================================
+
+Pseudo-classes style elements based on user interaction or element state.
+
+Syntax:
+selector:pseudo-class
+
+Common Examples:
+
+a:link     – styles unvisited links  
+a:visited  – styles visited links  
+a:hover    – styles when mouse is over  
+a:active   – styles when link is clicked  
+li:nth-child(n) – styles the nth child  
+li:nth-last-child(n) – styles the nth child from the end  
+:first-child, :last-child – styles first/last children
+
+Example:
+a:hover {
+    color: green;
+}
+
+.container ul li:nth-last-child(5) {
+    background-color: red;
+    color: white;
+}
+
+---------------------------------
+4. PSEUDO-ELEMENTS
+=================================
+
+Pseudo-elements let you style specific parts of an element.
+
+Syntax:
+selector::pseudo-element
+
+Examples:
+
+::before – adds content before element  
+::after – adds content after element  
+::first-letter – targets the first letter  
+::first-line – targets the first line
+
+Example:
+h1::first-letter {
+    font-size: 50px;
+}
+
+h1:hover::before {
+    content: "Hello! ";
+}
+
+h1:hover::after {
+    content: " Krishna";
+}
+
+p:hover::first-letter {
+    font-size: 30px;
+}
+
+---------------------------------
+ADDITIONAL SELECTORS USAGE (REAL CASES)
+========================================
+
+1. CATEGORY CARDS (Attribute Selector)
+---------------------------------------
+[data-type="fashion"] → Yellow background  
+[data-type="electronics"] → Blue background  
+[data-type="home"] → Green background  
+
+2. PRODUCT CARDS
+-----------------
+.product-card → general styling  
+.product-card.featured → highlighted with gold border  
+
+3. NAVIGATION BAR
+------------------
+.navbar .nav-link → hover effect with transition  
+.nav-list > li → child selector for spacing  
+
+4. FOOTER EMAIL
+----------------
+[data-info="support"] → Italic style and blue color  
+
+---------------------------------
+BEST PRACTICES FOR SELECTORS
+---------------------------------
+
+- Use classes for reusability
+- Use IDs only for unique elements
+- Avoid too much specificity (e.g., chaining many selectors)
+- Use attribute and pseudo selectors for dynamic UI elements
+- Group selectors to avoid repeating rules
+
+---------------------------------
+SUMMARY OF SELECTOR TYPES
+=================================
+
+1. Basic Selectors:
+   - * (Universal)
+   - tag (h1, p, div)
+   - .class
+   - #id
+   - [attribute]
+   - Grouping (h1, h2, p)
+
+2. Combinators:
+   - Descendant (space)
+   - Child (>)
+   - Adjacent Sibling (+)
+   - General Sibling (~)
+
+3. Pseudo-classes:
+   - :hover, :active, :visited, :nth-child, :first-child
+
+4. Pseudo-elements:
+   - ::before, ::after, ::first-letter
