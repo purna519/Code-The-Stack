@@ -1,0 +1,41 @@
+A variable is nothing but which holds a value
+
+variable declare
+================
+=> let 
+=> var
+=> const
+
+==================================================================
+
+variable declaration
+variable intiliazation
+
+---------------------------------------------
+
+let int a; -> variable declaration
+a = 10 -> variable intiliazation
+
+a = 20 -> re intiliazation
+
+------------------------------------------------
+
+var int b; -> variable declaration
+b = 20; -> variable intiliazation
+
+b = 30; -> re intiliazation
+var b = 40; -> re declaration
+
+--------------------------------------------------
+
+const pie = 3.14577983;
+
+---------------------------------------------------
+
+=========================================================================
+
+
+java script is a loosly typed lang
+==================================
+
+let a  = 10;

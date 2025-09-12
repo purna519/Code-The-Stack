@@ -1,0 +1,18 @@
+Java script 
+============
+=> javascript is a highlevel language
+=> it is interpreter based language
+=> is platform independent
+=> java script is a scripting language
+
+History
+=======
+=> invented in the year 1995 by bernanden eich
+=> cuurent version is es7 2016
+
+Implementation
+===============
+3 types
+1. inline
+2. internal
+3. external
