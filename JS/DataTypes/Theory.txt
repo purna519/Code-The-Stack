@@ -1,0 +1,16 @@
+Data Types:
+===========
+
+data types are manily of two types which are:
+1. Primitive Data Type :
+    => number
+    => Bigint
+    => String
+    => boolean
+    => null
+    => undefined
+2. Non-Primitive Data Type :
+    => array
+    => object
+    => array of objects
+
