@@ -1,0 +1,8 @@
+Conditional Statements :
+=========================
+
+if - when the condition which we mentioned in the if clause is true then it will be execute or it will just pass that if block code.
+
+if - else 
+        - if the condition inside the if statement is true then it will excute if block code otherwise it will excute else block of code.
+else if 
