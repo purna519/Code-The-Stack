@@ -1,0 +1,56 @@
+Operators in Java Script:
+=========================
+
+1. Arthematical Operators
+2. Relational Operators
+3. Logical Operators
+4. Bitwise Operators
+(5. Ternanry Operator - if condition)
+
+
+1. Arthmetic Operator 
+=====================
+    Addition - +
+    Subraction - -
+    Multiplication - *
+    Divison - /
+    Modulos - %
+    Increment - ++
+    Decrement - --
+
+2. Relational Operator
+======================
+    == 2 values equal or not
+    === 2 varibles datatypes or not
+    += Addition
+    -= Subraction
+    *= Multiplication
+    /= Divison
+    >= greater than or equal to
+    <= less than or equal to
+    != not equal to
+
+3. Logical Operator
+===================
+    && - AND operator = All the conditions should be true
+    || - OR operator = Any one of the conditions should be true
+    ! - NOT Operator = It reverse the boolean value
+
+4.Bitwise Operators
+====================
+    & , | , ! , << , >>
+
+5. Ternanry Operator
+=====================
+
+if condition {
+    ....
+}
+else {
+    .......
+}
+
+condition ? true : false
+a = 30
+a > 10 ? "A is greater than 10" : "A is lesser than 10";
+A is greater than 10
