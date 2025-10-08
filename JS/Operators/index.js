@@ -81,3 +81,16 @@ console.log(b << 5);
 current = 0;
 
 console.log(current ? "Current is supplying" : "Current is not supplying");
+
+
+
+
+// Task
+// =====
+
+// let targetNumber = Math.floor(Math.random() * 10) + 1; - random ga oka number geenrate chesidhi, chese aa numer ni ee       targetNumber ane variable lo store chesidhi
+
+// Take a number from user
+// compare the generated number with user provided number
+// suppose the both numbers are equal print Hurray! you guessed the right number
+// otherwise print Sorry, please try again.....
