@@ -1,0 +1,94 @@
+Loops
+======
+Loops ====> repeating anything is called a loop
+loop in programming ====> repeatedly executing a block of code based on a condition.
+
+1. While loop
+2. do- while loop
+3. For loop
+4 Switch
+
+1. while loop 
+=============
+    based on the given condition it will execute the block of code.
+Syntax :
+    while (condition) {
+        Block of code to excute unitll the condtion fails
+    }
+
+2. Do while loop
+================
+    despite of condidtion the block of code will excecute atleast one time
+Syntax :
+========
+    do {
+        Block of code
+    } while (condition)
+
+3. For Loops
+=============
+    based on the given condition it will execute the block of code.
+Syntax
+    for (value intiliaze; condition; increment) {
+        Block of code to execute;
+    }
+
+4. Switch Case
+==============
+    It will run based in the condition
+Syntax 
+    Switch(expression) {
+        case value:
+            block of code to be executed;
+            break;
+        case value:
+            block of code to execute;
+            break;
+        default:
+            block of code to execute;
+    }
+
+
+(break , countinue)
+===================
+break - it ends the loop and come out of the loop no matter whether the condition is true/false
+countinue - it will just skip that one iteration and passes the interpreter
+
+
+<======================================================================> Nested Loops <============================================================================>
+
+while {
+    while {
+        .......
+    }
+}
+
+nested loops = rows , columns
+
+output : 
+c1
+*
+*
+*
+*
+code :
+let i = 1;
+while (i <= 4) {
+    console.log('*');
+    i++;
+    j = 1;
+    while (j <= i) {
+        console.log("*");
+        j++;
+    }
+}
+
+
+output:
+c1 c2
+* *
+* *
+* *
+* *
+
+
