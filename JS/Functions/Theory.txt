@@ -1,0 +1,30 @@
+Marriage
+=========
+
+Shamiyana              ------> rent
+Cooking              ------> rent
+Decoration              ------> rent
+Makeup              ------> rent
+Panthulu              ------> rent
+Transport vehicles        ------> rent
+
+
+Functions in coding
+====================
+
+already some block of code or logic wil be written inside a Function.
+
+There are 
+1. inbuild function =====> already the functions which are written inside JS library which we get them when we installed the JS.
+2. User defined Function ====> it is the function which was written by user.
+
+Types of functions:
+====================
+()
+--> Named Functions
+--> Anonymous Functions
+--> Immediate invoked functions
+--> Arrow functions **
+--> High Order Functions
+--> Constructors
+
